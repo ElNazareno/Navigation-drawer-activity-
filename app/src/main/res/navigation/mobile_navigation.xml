@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.clase14.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_imagen_3"
+            app:destination="@id/imagen_3" />
+        <action
+            android:id="@+id/action_nav_home_to_imagen_2"
+            app:destination="@id/imagen_2" />
+        <action
+            android:id="@+id/action_nav_home_to_imagen_1"
+            app:destination="@id/imagen_1" />
+        <action
+            android:id="@+id/action_nav_home_to_calcu_fragment"
+            app:destination="@id/calcu_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.clase14.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.clase14.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/imagen_1"
+        android:name="com.example.clase14.imagen_1"
+        android:label="fragment_imagen_1"
+        tools:layout="@layout/fragment_imagen_1" />
+    <fragment
+        android:id="@+id/imagen_2"
+        android:name="com.example.clase14.imagen_2"
+        android:label="fragment_imagen_2"
+        tools:layout="@layout/fragment_imagen_2" />
+    <fragment
+        android:id="@+id/imagen_3"
+        android:name="com.example.clase14.imagen_3"
+        android:label="fragment_imagen_3"
+        tools:layout="@layout/fragment_imagen_3" />
+    <fragment
+        android:id="@+id/calcu_fragment"
+        android:name="com.example.clase14.calcu_fragment"
+        android:label="fragment_calcu_fragment"
+        tools:layout="@layout/fragment_calcu_fragment" />
+</navigation>
